@@ -1,28 +1,46 @@
 package com.example.knk;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.event.ActionEvent;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.stage.Stage;
-import javafx.scene.control.Button;
-import javafx.stage.StageStyle;
-
 
 import java.io.File;
-import java.io.IOException;
-import java.net.URI;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ResourceBundle;
 import java.net.URL;
+import java.util.ResourceBundle;
+
+public class LoginController implements Initializable {
+
+
+    @FXML
+    private Button cancelButton;
+    @FXML
+    private Button loginButton;
+
+    @FXML
+    private Label loginMessageLabel;
+    @FXML
+    public ImageView brandingImageView;
+    @FXML
+    public ImageView lockImageView;
+    @FXML
+    private TextField userNameTextFiled;
+    @FXML
+    private PasswordField userNamePasswordFiled;
+
+    @Override
+    public  void initialize(URL url, ResourceBundle resourceBundle){
+//        File brandingFile = new File("imgs/cart1.jpg");
+//        Image brandingImage = new Image(brandingFile.toURI().toString());
+//        System.out.println(brandingImage);
+//        brandingImageView.setImage(brandingImage);
+
+        File lockFile = new File("imgs/lock.jpg");
+        Image lockImage = new Image(lockFile.toURI().toString());
+        System.out.println(lockImage);
+        lockImageView.setImage(lockImage);
+    }
