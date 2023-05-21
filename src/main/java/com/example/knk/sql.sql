@@ -39,3 +39,23 @@ INSERT INTO `Item` VALUES (1,'new','fj',1,'imgUrl',7,3),(2,'kajdf','kfj',1,'imgU
 UNLOCK TABLES;
 
 --
+-- Table structure for table `user_account`
+--
+
+DROP TABLE IF EXISTS `user_account`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_account` (
+  `account_id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `user_name` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `role` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`account_id`),
+  UNIQUE KEY `account_id_UNIQUE` (`account_id`),
+  UNIQUE KEY `user_name_UNIQUE` (`user_name`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
