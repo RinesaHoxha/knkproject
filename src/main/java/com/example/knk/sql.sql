@@ -28,3 +28,14 @@ CREATE TABLE `Item` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+--
+-- Dumping data for table `Item`
+--
+
+LOCK TABLES `Item` WRITE;
+/*!40000 ALTER TABLE `Item` DISABLE KEYS */;
+INSERT INTO `Item` VALUES (1,'new','fj',1,'imgUrl',7,3),(2,'kajdf','kfj',1,'imgUrl',10,0),(3,'kajdf','kfj',1,'imgUrl',10,0),(4,'kajdf','kfj',1,'imgUrl',10,0),(5,'books','omega',10,'imgUrl',7,3),(6,'pen','bic',3,'imgUrl',10,7),(7,'bread','shewa',32,'imgUrl',10,0),(8,'soap','GoodBrabd',20,'imgUrl',10,0),(9,'jebena','ethio pots',90,'imgUrl',90,0),(10,'card','post card brand',4,'imgUrl',4,0),(11,'pc','toshiba',3453,'imgUrl',2447,1006);
+/*!40000 ALTER TABLE `Item` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
