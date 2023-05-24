@@ -1,6 +1,7 @@
-package com.example.demo2.Controller;
+package com.example.knk.Controller;
 
-import com.example.demo2.DatabaseConnectio;
+import com.example.demo2.DatabaseConnection;
+import com.example.knk.Controller.ItemModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

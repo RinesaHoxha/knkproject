@@ -2,13 +2,13 @@ package com.example.knk;
 
 import javafx.scene.layout.HBox;
 
-public class CommonObject {
-    private static CommonObject commonObject = new CommonObject();
+public class CommonObjects {
+    private static CommonObjects commonObject = new CommonObjects();
 
     private HBox mainBox;
 
-    private CommonObject(){}
-    public static CommonObject getInstance() {return commonObject; }
+    private CommonObjects(){}
+    public static CommonObjects getInstance() {return commonObject; }
 
     public HBox getMainBox() {return mainBox; }
 

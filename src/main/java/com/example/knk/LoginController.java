@@ -89,7 +89,7 @@ public class LoginController implements Initializable {
                     stage.setScene(new Scene(mainBox, 900, 800));
                     stage.show();
 
-                    CommonObject commonObjects = CommonObject.getInstance();
+                    CommonObjects commonObjects = CommonObjects.getInstance();
                     commonObjects.setMainBox(mainBox);
 
                 } else {
