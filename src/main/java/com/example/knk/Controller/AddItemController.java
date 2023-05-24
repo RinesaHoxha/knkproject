@@ -1,5 +1,5 @@
 package com.example.knk.Controller;
-import com.example.demo2.DatabaseConnection;
+import com.example.knk.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;

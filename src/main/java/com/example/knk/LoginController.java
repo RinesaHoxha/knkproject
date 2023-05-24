@@ -14,15 +14,19 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
+import java.net.URI;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+import java.net.URL;
+
 
 public class LoginController implements Initializable {
 
@@ -31,7 +35,6 @@ public class LoginController implements Initializable {
     private Button cancelButton;
     @FXML
     private Button loginButton;
-
     @FXML
     private Label loginMessageLabel;
     @FXML
@@ -50,7 +53,7 @@ public class LoginController implements Initializable {
 //        System.out.println(brandingImage);
 //        brandingImageView.setImage(brandingImage);
 
-        File lockFile = new File("imgs/lock.jpg");
+        File lockFile = new File("imgsrc/lock.jpg");
         Image lockImage = new Image(lockFile.toURI().toString());
         System.out.println(lockImage);
         lockImageView.setImage(lockImage);
@@ -68,7 +71,7 @@ public class LoginController implements Initializable {
         }
     }
     public void validateLogin(){
-        DatabaseConnectio DBcon = new DatabaseConnectio();
+        DatabaseConnection DBcon = new DatabaseConnection();
         Connection cond = DBcon.getConnection();
 
         String verifyLogin = " select count(1) from user_account where user_name = '" + userNameTextFiled.getText() + "' And password ='" + userNamePasswordFiled.getText() + "'";
@@ -104,7 +107,7 @@ public class LoginController implements Initializable {
             throw new RuntimeException(e);
         }
     }
-    public  void onCancle(){
+    public  void onCancel(){
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
 

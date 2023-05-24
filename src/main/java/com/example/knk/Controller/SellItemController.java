@@ -1,6 +1,6 @@
 package com.example.knk.Controller;
 
-import com.example.demo2.DatabaseConnection;
+import com.example.knk.DatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -68,7 +68,7 @@ public class SellItemController {
     }
 
     private void searchItem(String iteId) {
-        DatabaseConnectio DBcon = new DatabaseConnectio();
+        DatabaseConnection DBcon = new DatabaseConnection();
         Connection cond = DBcon.getConnection();
         this.errorLabel.setText("");
         this.errornowordLabel.setText("");
