@@ -62,7 +62,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 
-INSERT INTO `user_account` VALUES (1,'abebe','kebede','abekebe','abekebe',NULL);
+INSERT INTO `user_account` VALUES (1,'vesa ','zhitia','vesazhitia','12345678',NULL);
 
 UNLOCK TABLES;
 
