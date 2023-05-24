@@ -5,6 +5,7 @@ module com.example.knk {
     requires javafx.graphics;
 
 
+
     opens com.example.knk to javafx.fxml;
     exports com.example.knk;
 }
