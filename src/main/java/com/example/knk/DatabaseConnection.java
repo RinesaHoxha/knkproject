@@ -8,7 +8,7 @@ public class DatabaseConnection {
     public  Connection getConnection(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn =  DriverManager.getConnection("jdbc:mysql://localhost/Ecom?user=black&password=tikur");
+            conn =  DriverManager.getConnection("jdbc:mysql://localhost/Ecom?user=root&password=vesazhitia.12fr");
 
 
         } catch (Exception ex) {

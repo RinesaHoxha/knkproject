@@ -1,4 +1,5 @@
 package com.example.knk.Controller;
+
 import com.example.knk.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -102,7 +103,7 @@ public class AddItemController {
             Statement statement = cond.createStatement();
             statement.executeUpdate(addQuery);
 
-            ItemAddMessegeLabel.setText(itemName + "Add successfully");
+            ItemAddMessegeLabel.setText(itemName + "Added successfully");
             System.out.println("success");
 
             ItemName.setText("");

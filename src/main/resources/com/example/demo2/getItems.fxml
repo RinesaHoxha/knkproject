@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.knk.Controller.getItemsController">
+<AnchorPane prefHeight="400.0" prefWidth="665.0" style="-fx-background-color: #F2F3F4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.knk.Controller.getItemsController">
     <children>
         <AnchorPane layoutX="173.0" layoutY="2.0" prefHeight="432.0" prefWidth="770.0">
             <children>
@@ -36,7 +36,7 @@
                     <children>
                         <VBox prefHeight="262.0" prefWidth="279.0">
                             <children>
-                                <Button mnemonicParsing="false" onAction="#opUpdate" style="-fx-background-color: 00000;" text="UPDATE" textFill="#cacd0f" />
+                                <Button mnemonicParsing="false" onAction="#opUpdate" style="-fx-background-color: 00000;" text="UPDATE" textFill="#3369e8" />
                                 <Button mnemonicParsing="false" onAction="#opRemove" style="-fx-background-color: #efefef;" text="Remove" textFill="#ee0000" />
                                 <HBox prefHeight="57.0" prefWidth="279.0" style="-fx-alignment: center;">
                                     <children>

@@ -1,4 +1,5 @@
 package com.example.knk.Controller;
+
 import javafx.beans.property.SimpleStringProperty;
 
 public class ItemModel {
@@ -10,14 +11,17 @@ public class ItemModel {
     private  SimpleStringProperty sold;
 
     public String getId() {
+
         return id.get();
     }
 
     public SimpleStringProperty idProperty() {
+
         return id;
     }
 
     public void setId(String id) {
+
         this.id.set(id);
     }
 

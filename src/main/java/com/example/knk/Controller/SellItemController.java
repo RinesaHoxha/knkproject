@@ -106,7 +106,7 @@ public class SellItemController {
     @FXML
     private void displayImage(String id) {
         System.out.println("imgs/item/item" + id + ".jpeg");
-        String iPath = "file:///media/black/epart/project/java/demo2/src/main/resources/com/example/demo2/imgs/item/item" + id + ".jpeg";
+        String iPath = "file:///media/black/epart/project/java/knk/src/main/resources/com/example/knk/imgs/item/item" + id + ".jpeg";
         Image image = new Image(iPath);
         itemImage.setImage(image);
     }

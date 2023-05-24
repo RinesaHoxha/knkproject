@@ -6,7 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.knk.Controller.SellItemController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.knk.Controller.SellItemController">
     <children>
         <Label layoutX="247.0" layoutY="88.0" text="Search Item" />
         <TextField fx:id="searchFiled" layoutX="175.0" layoutY="119.0" />
@@ -15,15 +15,15 @@
         <AnchorPane fx:id="itemAnchor" layoutX="43.0" layoutY="189.0" prefHeight="182.0" prefWidth="515.0">
             <children>
                 <ImageView fx:id="itemImage" fitHeight="150.0" fitWidth="154.0" layoutX="20.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
-                <Label fx:id="priceLabel" layoutX="256.0" layoutY="59.0" prefHeight="16.0" prefWidth="42.0" />
-                <Label fx:id="stockLabel" layoutX="261.0" layoutY="83.0" prefHeight="16.0" prefWidth="32.0" />
-                <Label layoutX="202.0" layoutY="59.0" text="Price" />
+                <Label fx:id="priceLabel" layoutX="256.0" layoutY="59.0" opacity="0.15" prefHeight="17.0" prefWidth="72.0" style="-fx-background-color: #000;" AnchorPane.leftAnchor="258.0" AnchorPane.rightAnchor="185.0" />
+                <Label fx:id="stockLabel" layoutX="261.0" layoutY="83.0" opacity="0.15" prefHeight="17.0" prefWidth="72.0" style="-fx-background-color: #000;" AnchorPane.leftAnchor="258.0" />
+                <Label layoutX="200.0" layoutY="59.0" prefHeight="17.0" prefWidth="29.0" text="Price" />
                 <Label layoutX="200.0" layoutY="83.0" text="Stock" />
                 <Label layoutX="202.0" layoutY="115.0" text="How Much " />
                 <TextField fx:id="howMuchTextField" layoutX="276.0" layoutY="111.0" prefHeight="24.0" prefWidth="24.0" />
                 <Button layoutX="327.0" layoutY="111.0" mnemonicParsing="false" onAction="#opSell" text="Sell" />
                 <Label layoutX="200.0" layoutY="37.0" text="Name" />
-                <Label fx:id="nameLabel" layoutX="258.0" layoutY="37.0" prefHeight="16.0" prefWidth="72.0" />
+                <Label fx:id="nameLabel" layoutX="258.0" layoutY="37.0" opacity="0.15" prefHeight="16.0" prefWidth="72.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="258.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="37.0" />
             </children>
         </AnchorPane>
         <Label fx:id="errornowordLabel" layoutX="185.0" layoutY="161.0" prefHeight="16.0" prefWidth="171.0" />
