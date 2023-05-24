@@ -1,5 +1,5 @@
 package com.example.knk.Controller;
-//import com.example.demo2.DatabaseConnection;
+import com.example.demo2.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -84,7 +84,7 @@ public class AddItemController {
     }
 
     public void validateItemAdd() {
-        DatabaseConnectio DBcon = new DatabaseConnectio();
+        DatabaseConnection DBcon = new DatabaseConnection();
         Connection cond = DBcon.getConnection();
 
         String itemName = ItemName.getText();

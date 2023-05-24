@@ -60,7 +60,7 @@ public class getItemsController implements Initializable {
 
 
     public void getItems() {
-        DatabaseConnectio DBcon = new DatabaseConnectio();
+        DatabaseConnection DBcon = new DatabaseConnection();
         Connection cond = DBcon.getConnection();
 
 
